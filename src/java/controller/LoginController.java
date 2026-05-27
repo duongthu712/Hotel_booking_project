@@ -21,11 +21,11 @@ public class LoginController extends HttpServlet {
             if (session != null) session.invalidate();
 
             response.sendRedirect(request.getContextPath()
-                    + "/auth/login.jsp?msg=Logged out successfully");
+                    + "/view/auth/login.jsp?msg=Logged out successfully");
             return;
         }
 
-        request.getRequestDispatcher("/auth/login.jsp").forward(request, response);
+        request.getRequestDispatcher("/view/auth/login.jsp").forward(request, response);
     }
 
     @Override
@@ -48,23 +48,23 @@ public class LoginController extends HttpServlet {
             String role = user.getRole();
 
             if ("Administrator".equals(role)) {
-                response.sendRedirect(request.getContextPath() + "/admin/staff-management.jsp");
+                response.sendRedirect(request.getContextPath() + "/view/admin/staff-management.jsp");
 
             } else if ("Manager".equals(role)) {
-                response.sendRedirect(request.getContextPath() + "/manager/dashboard.jsp");
+                response.sendRedirect(request.getContextPath() + "/view/manager/dashboard.jsp");
 
             } else if ("Receptionist".equals(role)) {
-                response.sendRedirect(request.getContextPath() + "/receptionist/dashboard.jsp");
+                response.sendRedirect(request.getContextPath() + "/view/receptionist/dashboard.jsp");
 
             } else {
                 session.invalidate();
-                response.sendRedirect(request.getContextPath() + "/auth/login.jsp?msg=Invalid role");
+                response.sendRedirect(request.getContextPath() + "/view/auth/login.jsp?msg=Invalid role");
             }
 
         } else {
             request.setAttribute("errorMessage",
                 "Invalid username, password or inactive account.");
-            request.getRequestDispatcher("/auth/login.jsp").forward(request, response);
+            request.getRequestDispatcher("/view/auth/login.jsp").forward(request, response);
         }
     }
 }
