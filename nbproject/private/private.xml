@@ -3,7 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/F:/Hotel_booking_project/web/view/auth/reset-password.jsp</file>
+            <file>file:/F:/Hotel_booking_project/src/java/controller/LoginController.java</file>
+            <file>file:/F:/Hotel_booking_project/build/web/static/css/style.css</file>
+            <file>file:/F:/Hotel_booking_project/src/java/dao/StaffDAO.java</file>
+            <file>file:/F:/Hotel_booking_project/src/java/dal/DBContext.java</file>
+            <file>file:/F:/Hotel_booking_project/web/view/receptionist/request-processing.jsp</file>
+            <file>file:/F:/Hotel_booking_project/web/view/auth/login.jsp</file>
             <file>file:/F:/Hotel_booking_project/web/index.html</file>
+            <file>file:/F:/Hotel_booking_project/web/view/receptionist/payment-verification.jsp</file>
+            <file>file:/F:/Hotel_booking_project/web/view/common/header.jsp</file>
+            <file>file:/F:/Hotel_booking_project/web/view/auth/forget-password.jsp</file>
+            <file>file:/F:/Hotel_booking_project/web/WEB-INF/web.xml</file>
+            <file>file:/F:/Hotel_booking_project/web/WEB-INF/connectDB.properties</file>
+            <file>file:/F:/Hotel_booking_project/src/java/model/StaffAccount.java</file>
         </group>
     </open-files>
 </project-private>
